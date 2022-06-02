@@ -62,12 +62,20 @@ a{
 }
 
 /* about */
+
+.aboutPost{
+    height: 325px;
+}
+
 .info{
+    width: 90%;
     line-height: 18px;
     font-size: 14px;
 }
+
 /*------------ Left-side-end --------------*/
 /*------------ right-side --------------*/
+
 /* header */
 .bannerText{
     width: 70%;
@@ -76,11 +84,19 @@ a{
 }
 .social-icons{
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 .social-icon{
     margin-left: 1rem;
 }
+
+.slider-bg{
+    width: 70% !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*------------ right-side-end --------------*/
 
 /* recent works / projects */
@@ -88,14 +104,14 @@ a{
 
 /* card css */
 .row-border-class{
-    /* border: 2px solid #6C757D; */
+    border: 2px solid #6C757D;
     /* border-radius: 8px; */
     background-color: #f9f9f9;
 }
 
-.col-border-class-left{
-    /* border-left: 3px solid #6C757D; */
-}
+/* .col-border-class-left{
+    border-left: 3px solid #6C757D;
+} */
 
 /* .col-border-class-right{
     border-right: 3px solid #6C757D;
@@ -111,6 +127,11 @@ a{
 
 .project-img img{
     border-radius: 8px !important;
+}
+
+.content-text{
+    line-height: 18px;
+    font-size: 14px;
 }
 
 .used-tech{
@@ -129,3 +150,18 @@ a{
 }
 
 /* recent works / projects end */
+
+/* footer */
+
+#scroll-up-arrow{
+    font-size: 1.2rem;
+    color: #5c9490;
+    border: 1px solid #5c9490;
+}
+
+#scroll-up-arrow:hover{
+    background-color: #5c9490;
+    color: #fff;
+}
+
+/* footer end*/
