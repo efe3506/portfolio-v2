@@ -7,10 +7,6 @@ body{
     font-size: 10px;
 }
 
-h3{
-    color: #5c9490;
-}
-
 h5{
     font-size: 16px;
     color: #5c9490;
@@ -82,50 +78,3 @@ a{
     margin-left: 1rem;
 }
 /*------------ right-side-end --------------*/
-
-/* recent works / projects */
-
-
-/* card css */
-.row-border-class{
-    /* border: 2px solid #6C757D; */
-    /* border-radius: 8px; */
-    background-color: #f9f9f9;
-}
-
-.col-border-class-left{
-    /* border-left: 3px solid #6C757D; */
-}
-
-/* .col-border-class-right{
-    border-right: 3px solid #6C757D;
-} */
-
-/* küçük ekrandaki solda gözükecek olan borderı yok etmek için media query */
-
-@media screen and (max-width: 768px) {
-    .col-border-class-left, .col-border-class-right{
-        border: none;
-    }
-}
-
-.project-img img{
-    border-radius: 8px !important;
-}
-
-.used-tech{
-    font-size: larger;
-}
-
-.a-btn{
-    margin: 0 auto;
-    border-color: #5c9490 !important;
-    color: #5c9490 !important;
-}
-
-.a-btn:hover{
-    background-color: #5c9490 !important;
-    color: #fff !important;
-}
-
-/* recent works / projects end */
