@@ -123,6 +123,11 @@ a{
     .col-border-class-left, .col-border-class-right{
         border: none;
     }
+
+    /* bu class'a sahip cardlar diğer cardların zıttı yapıda olduğu için küçük ekranda anormal durmamaları adına column-reverse yapıldı. */
+    .right-content-side{
+        flex-direction: column-reverse !important;
+    }
 }
 
 .project-img img{
