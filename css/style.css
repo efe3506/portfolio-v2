@@ -1,36 +1,53 @@
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --dark-blue: #31326f;
+    --blue: #42C2FF;
+    --white-blue: #EFFFFD; 
+    --light-blue: #85F4FF;
+    --lighter-blue: #B8FFF9;
+    --light-gray-blue: #a7b9e3;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --grey: #eee;
+    --dark-grey: #222831;
+  }
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: #e8e8e8;
+    background-color: var(--grey);
     font-size: 10px;
 }
 
+
 h3{
-    color: #5c9490;
+    color: var(--black);
 }
 
 h5{
     font-size: 16px;
-    color: #5c9490;
+    color: var(--black);
 }
 
 h6{
     margin: 10px 0;
     font-size: 13px;
-    color: #5c9490;
+    color: var(--black);
 }
 
 p{
     font-size: 12px;
+    color: var(--black);
     /* line-height: 10px; */
 }
 
 a{
     text-decoration: none;
 }
-.main{
+.container{
     width: 85% !important;
     padding-top: 20px;
 }
@@ -44,7 +61,7 @@ a{
 }
 
 #navbar{
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 100%;
     font-weight: 600;
     padding: 1.5rem .5rem;
@@ -64,13 +81,16 @@ a{
 /* about */
 
 .aboutPost{
-    height: 325px;
+    height: 42rem;
 }
 
+#about-h5{
+    font-size: 1.8rem;
+}
 .info{
     width: 90%;
-    line-height: 18px;
-    font-size: 14px;
+    line-height: 2.2rem;
+    font-size: 1.8rem;
 }
 
 /*------------ Left-side-end --------------*/
@@ -80,11 +100,11 @@ a{
 .bannerText{
     width: 70%;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 .social-icons{
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -97,14 +117,22 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.slider-text{
+    font-size: 1.4rem !important;
+    color: var(--white);
+}
+
 /*------------ right-side-end --------------*/
 
 /* recent works / projects */
 
+#recent-heading{
+    font-size: 2.5rem !important;
+}
 
 /* card css */
 .row-border-class{
-    border: 2px solid #6C757D;
+    /* border: 2px solid #6C757D; */
     /* border-radius: 8px; */
     background-color: #f9f9f9;
 }
@@ -134,17 +162,22 @@ a{
     border-radius: 8px !important;
 }
 
+.card-content-heading{
+    font-size: 2rem;
+}
+
 .content-text{
-    line-height: 18px;
-    font-size: 14px;
+    line-height: 2rem;
+    font-size: 1.8rem;
 }
 
 .used-tech{
-    font-size: larger;
+    font-size: 1.7rem;
 }
 
 .a-btn{
     margin: 0 auto;
+    font-size: 1.7rem;
     border-color: #5c9490 !important;
     color: #5c9490 !important;
 }
@@ -158,8 +191,12 @@ a{
 
 /* footer */
 
+footer p{
+    font-size: 1.5rem;
+}
+
 #scroll-up-arrow{
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #5c9490;
     border: 1px solid #5c9490;
 }
@@ -170,3 +207,91 @@ a{
 }
 
 /* footer end*/
+
+
+/* ==========PROJECTS CSS================ */
+
+/* header/navbar */
+
+.logo-nav{
+    background-color: var(--white);
+}
+
+.project-nav{
+    font-size: 1.5rem;
+}
+
+.project-nav a{
+    color: var(--black);
+}
+
+/* header/navbar end*/
+
+/* projects-card */
+
+.project-container{
+    width: 70%;
+    margin: auto;
+}
+
+.projects{
+    background-color: var(--white);
+}
+
+.projects img{
+    width: 45%;
+    height: auto;
+    margin: auto !important;
+    border-radius: 8px;
+}
+
+.projects p{
+    font-size: 1.5rem;
+}
+
+.projects figcaption{
+    font-size: 1.3rem;
+}
+
+/*? expanding divs */
+
+.expanding-divs{
+    display: flex;
+    height: 45rem;
+    padding: 1rem;
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+    border-radius: 8px;
+}
+
+.expanding-divs img{
+    height: 40rem !important;
+}
+
+.panel{
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: .7;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel.active{
+    flex: 5;
+}
+  
+
+
+/*? expanding divs end*/
+
+/* projects-card end*/
+
+
+
+/* ==========PROJECTS CSS END============ */
